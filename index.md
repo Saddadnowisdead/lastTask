@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>Код блочного сайта</title>
+<title>Зачёт</title>
 <link rel="stylesheet" href="main.css">
 <link
       rel="stylesheet"
