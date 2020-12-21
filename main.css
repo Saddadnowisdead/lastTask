@@ -3,8 +3,8 @@ body{
   background-attachment: fixed;
 }
 
-#wrapper{ /* Оболочка страницы сайта */
-  width: 900px; /* Меняется ширина страницы */
+#wrapper{ 
+  width: 900px; 
   margin: 0 auto;
 background: rgba(123, 115, 113,0.1);
 }
@@ -13,31 +13,31 @@ background: rgba(123, 115, 113,0.1);
   background-image: url(bg.jpg);
 }
 
-h1{ /* Заголовок сайта */
+h1{ 
   text-align: left-bottom;
   margin-top: 150px;
-  color:white; /* Цвет заголовка */
+  color:white; 
 }
-.nomer{ /*Подзаголовок (номер телефона)*/
+.nomer{ 
   margin-top: 150px;
-  position:absolute; /* Позиционируем абсолютно подзаголовок, относительно границ блока header. Также можно разместить в шапке сайта ещё другие картинки и абзацы поверх фоновой картинки и заголовка */
-  top:5px; /* Двигается вверх-вниз */
-  left:850px; /* Двигается вправо-влево */
-  font-size: 25px; /* Размер букв подзаголовка */
-  font-style:italic; /* Курсив */
-  font-weight:bold; /* Жирный */
-  color:#464451; /* Цвет букв подзаголовка */
+  position:absolute; 
+  top:5px; 
+  left:850px; 
+  font-size: 25px; 
+  font-style:italic; 
+  font-weight:bold; 
+  color:#464451; 
 }
 
 
 
-#footer{ /* Блок подвала */
-  height:80px; /* Высота блока подвала */
-  margin-bottom: 10px; /* Отступ снизу */
+#footer{ 
+  height:80px; 
+  margin-bottom: 10px; 
   margin-top: 60px;
   background-image: url(bg.jpg);
 }
-.clear{ /* Запрет наплывания. Устанавливается для того, чтобы блок контента, при заполнении текстом и изображениями не наплывал на подвал */
+.clear{ 
   clear: both;
 }
 
