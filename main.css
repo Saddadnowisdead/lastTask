@@ -1,0 +1,251 @@
+body{
+  background-image: url(bg.jpg); 
+  background-attachment: fixed;
+}
+
+#wrapper{ /* Оболочка страницы сайта */
+  width: 900px; /* Меняется ширина страницы */
+  margin: 0 auto;
+background: rgba(123, 115, 113,0.1);
+}
+
+.top{
+  background-image: url(bg.jpg);
+}
+
+h1{ /* Заголовок сайта */
+  text-align: left-bottom;
+  margin-top: 150px;
+  color:white; /* Цвет заголовка */
+}
+.nomer{ /*Подзаголовок (номер телефона)*/
+  margin-top: 150px;
+  position:absolute; /* Позиционируем абсолютно подзаголовок, относительно границ блока header. Также можно разместить в шапке сайта ещё другие картинки и абзацы поверх фоновой картинки и заголовка */
+  top:5px; /* Двигается вверх-вниз */
+  left:850px; /* Двигается вправо-влево */
+  font-size: 25px; /* Размер букв подзаголовка */
+  font-style:italic; /* Курсив */
+  font-weight:bold; /* Жирный */
+  color:#464451; /* Цвет букв подзаголовка */
+}
+
+
+
+#footer{ /* Блок подвала */
+  height:80px; /* Высота блока подвала */
+  margin-bottom: 10px; /* Отступ снизу */
+  margin-top: 60px;
+  background-image: url(bg.jpg);
+}
+.clear{ /* Запрет наплывания. Устанавливается для того, чтобы блок контента, при заполнении текстом и изображениями не наплывал на подвал */
+  clear: both;
+}
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu-main {
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: #B22222;
+}
+.menu-main li {display: inline-block;}
+
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 15px 0 15px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #feb386;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #feb386;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+
+
+.parent > div {
+    float: left;
+    width: 33%;
+    margin-right: 5%;
+    margin-left: 8px;
+}
+
+.ano{
+  margin-left: 10px;
+  margin-top: 30px;
+  float:left;
+width:650px;
+color: #B2B2B2;
+}
+.luctus{
+float:right;
+width:200px;
+
+}
+.down{
+  border-bottom-color: #000000;
+}
+.downleft{
+     margin-top: 100px;
+  float:left;
+width:650px;
+color:#B2B2B2;
+margin-left: 10px;
+}
+.downright{
+  margin-top: 60px;
+float:right;
+width:200px;
+}
+p{ 
+    text-decoration: underline; 
+    color: white;
+   }
+.righth{
+  color: #B2B2B2;
+}
+h4, h2, h1{
+  color: white;
+}
+.anodized{
+  color: white;
+}
+.pic01{
+  color: #B2B2B2;
+  text-decoration: none;
+  float: right;
+}
+.im{
+  padding-right: 15px;
+  padding-bottom: 12px;
+}
+.im2{
+  padding-right: 15px;
+  padding-bottom: 0;
+}
+.foot{
+  color: grey;
+  text-decoration: none;
+  text-align: center;
+}
+b{
+  text-decoration: underline;
+}
+.a{
+  text-decoration: none;
+  color: white;
+}
+.a2{
+  color: white;
+}
+
+
+
+.transition-animation {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+ul {
+  list-style: none;
+}
+ul > li {
+  display: inline;
+  margin-right: 20px;
+}
+.icon {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: #f1f1f1;
+  line-height: 52px;
+  text-align: center;
+  background-color: grey;
+}
+.icon:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: "";
+  box-sizing: content-box;
+}
+.icon-effect .icon {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.icon-effect .icon:after {
+  top: -7px;
+  left: -7px;
+  padding: 7px;
+  box-shadow: 0 0 0 4px #f1f1f1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0;
+}
+.icon-effect-1a .icon:hover {
+  background-color: #f1f1f1;
+  color: grey;
+}
+.icon-effect-1a .icon:hover:after {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+
+
+
+
